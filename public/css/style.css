@@ -1,0 +1,66 @@
+/***********************
+    Body styling
+***********************/
+body {
+    background-color: pink;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    padding-top: 30px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+
+
+/***********************
+    Heading styling
+***********************/
+.company-name {
+    margin: 0px 0px 30px 50px;
+    font-family: 'Dancing Script',
+        cursive;
+    font-size: 80px;
+    color: pink;
+}
+
+header div button {
+    float: right;
+    background-color: red;
+    border: solid pink 2px;
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+header nav {
+    margin-left: 50px;
+}
+
+header a {
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 25px;
+}
+
+#shop-now {
+    float: right;
+    margin-right: 20px;
+    background-color: #d95779;
+    color: white;
+    font-size: 50px;
+}
+
+header {
+    border-bottom: solid 3px pink;
+    border-top: solid 3px pink;
+}
