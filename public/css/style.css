@@ -2,7 +2,8 @@
     Body styling
 ***********************/
 body {
-    background-color: pink;
+    background-color: #eec0c6;
+    background-image: linear-gradient(#eec0c6 0%, #e58c8a 74%);
     max-width: 1050px;
     margin: 0 auto;
     padding: 0px 10px;
@@ -15,6 +16,7 @@ body {
     padding-top: 30px;
     background-color: white;
     min-height: 100vh;
+    flex-grow: 1;
 }
 
 
@@ -23,7 +25,7 @@ body {
     Heading styling
 ***********************/
 .company-name {
-    margin: 0px 0px 30px 50px;
+    margin: 30px 0px 30px 30px;
     font-family: 'Dancing Script',
         cursive;
     font-size: 80px;
@@ -32,7 +34,7 @@ body {
 
 header div button {
     float: right;
-    background-color: red;
+    background-color: #ff7675;
     border: solid pink 2px;
     color: white;
     font-size: xx-large;
@@ -52,15 +54,80 @@ header a {
     font-size: 25px;
 }
 
+header a:hover {
+    color: #eec0c6;
+}
+
 #shop-now {
     float: right;
     margin-right: 20px;
-    background-color: #d95779;
+    background-color: #ff7675;
     color: white;
     font-size: 50px;
+}
+
+#shop-now:hover {
+    background-color: #f54747;
 }
 
 header {
     border-bottom: solid 3px pink;
     border-top: solid 3px pink;
+}
+
+header .logo-section img {
+    width: 9rem;
+    height: 9rem;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+header .logo-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+/***********************
+   Footer styling
+***********************/
+
+footer {
+    font-family: 'Roboto',
+        sans-serif;
+    display: flex;
+    margin: 0px;
+    padding: 3rem;
+    background-color: #ff7675;
+}
+
+.nav-menu-footer {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 1rem 2rem;
+
+}
+
+.nav-menu-footer a {
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    margin: 1rem 0;
+}
+
+.about-us-footer ul li {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.about-us-footer ul {
+    padding-left: 0;
+}
+
+.about-us-footer {
+    display: flex;
+    flex-direction: column;
+
 }
