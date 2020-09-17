@@ -2,8 +2,8 @@
     Body styling
 ***********************/
 body {
-    background-color: #eec0c6;
-    background-image: linear-gradient(#eec0c6 0%, #e58c8a 74%);
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
     max-width: 1050px;
     margin: 0 auto;
     padding: 0px 10px;
@@ -29,13 +29,13 @@ body {
     font-family: 'Dancing Script',
         cursive;
     font-size: 80px;
-    color: pink;
+    color: #D6A2E8;
 }
 
 header div button {
     float: right;
-    background-color: #ff7675;
-    border: solid pink 2px;
+    background-color: #D6A2E8;
+    border: solid #D6A2E8 2px;
     color: white;
     font-size: xx-large;
     margin-bottom: 20px;
@@ -61,7 +61,7 @@ header a:hover {
 #shop-now {
     float: right;
     margin-right: 20px;
-    background-color: #ff7675;
+    background-color: #D6A2E8;
     color: white;
     font-size: 50px;
 }
@@ -71,8 +71,8 @@ header a:hover {
 }
 
 header {
-    border-bottom: solid 3px pink;
-    border-top: solid 3px pink;
+    border-bottom: solid 3px #D6A2E8;
+    border-top: solid 3px #D6A2E8;
 }
 
 header .logo-section img {
@@ -95,30 +95,40 @@ header .logo-section {
 footer {
     font-family: 'Roboto',
         sans-serif;
-    display: flex;
     margin: 0px;
     padding: 3rem;
-    background-color: #ff7675;
+    background-color: #D6A2E8;
+    color: white;
+    padding: 1rem 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-grow: 1;
+
 }
 
 .nav-menu-footer {
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding: 1rem 2rem;
+    padding: 0rem 1rem;
 
 }
 
 .nav-menu-footer a {
     text-decoration: none;
-    font-size: x-large;
-    color: black;
-    margin: 1rem 0;
+    font-size: medium;
+    color: white;
+    margin: 0.5rem 0;
 }
 
 .about-us-footer ul li {
     list-style: none;
     padding-left: 0;
+    margin: 0.5rem 0rem;
+    font-size: small;
+    width: 150px;
 
 }
 
@@ -129,5 +139,39 @@ footer {
 .about-us-footer {
     display: flex;
     flex-direction: column;
+    margin-right: 2rem;
 
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
 }
