@@ -13,7 +13,10 @@
     "express": "^4.17.1",
     "handlebars": "^4.7.6",
     "hbs": "^4.1.1",
+<<<<<<< HEAD
     "nodemailer": "^6.4.11",
+=======
+>>>>>>> d170308637da52bb641f18cb8d529dc32ce83576
     "nodemon": "^2.0.4",
     "shopify-buy": "^2.11.0"
   }

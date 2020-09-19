@@ -2,7 +2,10 @@ const express = require('express')
 const path = require('path')
 const hbs = require('hbs')
 const shopify = require('shopify-buy')
+<<<<<<< HEAD
 const nodemailer = require('nodemailer')
+=======
+>>>>>>> d170308637da52bb641f18cb8d529dc32ce83576
 
 const app = express()
 const port = process.env.PORT || 3000;
@@ -15,6 +18,7 @@ const partialPath = path.join(__dirname, "../templates/partials")
 const productId = 'Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0Lzc4NTc5ODkzODQ=';
 
 
+<<<<<<< HEAD
 let transporter = nodemailer.createTransport({
     host: "smtp.example.com",
     port: 587,
@@ -45,6 +49,8 @@ transporter.verify(function (error, success) {
 
 
 
+=======
+>>>>>>> d170308637da52bb641f18cb8d529dc32ce83576
 app.set('view engine', 'hbs')
 
 app.set('views', viewsPath)
@@ -75,6 +81,15 @@ app.get('/contact', (req, res) => {
     })
 })
 
+<<<<<<< HEAD
+=======
+app.get('/about', (req, res) => {
+    res.render('about', {
+        title: 'Lovely Larea Boutique'
+    })
+})
+
+>>>>>>> d170308637da52bb641f18cb8d529dc32ce83576
 
 app.listen(port, () => {
     console.log(`Server running on port` + port);
