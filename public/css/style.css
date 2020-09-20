@@ -4,6 +4,11 @@
 body {
     background-color: #a4508b;
     background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
     max-width: 1050px;
     margin: 0 auto;
     padding: 0px 10px;
@@ -174,7 +179,6 @@ footer {
 .fa-instagram {
     background: #125688;
     color: white;
-<<<<<<< HEAD
 }
 
 /***********************
@@ -269,6 +273,4 @@ video {
     transform: translateX(-50%) translateY(-50%);
     transform: scaleY(0.2);
     transform: scaleX(1);
-=======
->>>>>>> d170308637da52bb641f18cb8d529dc32ce83576
 }
