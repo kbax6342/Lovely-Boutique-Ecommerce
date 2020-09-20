@@ -99,4 +99,8 @@ app.post('/send', (req, res) => {
 })
 
 
-app.listen(PORT);
+// app.listen(port, () => {
+//     console.log(`Server running on port` + port);
+// });
+
+app.listen(PORT)
