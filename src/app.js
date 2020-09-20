@@ -7,7 +7,7 @@ const oauth2 = require('oauth2')
 
 
 const app = express()
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 
 
@@ -16,6 +16,7 @@ const viewsPath = path.join(__dirname, '../templates/views')
 const partialPath = path.join(__dirname, "../templates/partials")
 app.set('view engine', 'hbs')
 app.set('views', viewsPath)
+app.set("port", PORT)
 
 hbs.registerPartials(partialPath)
 
