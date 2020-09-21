@@ -27,8 +27,7 @@
         <div class="header">
             {{>header}}
         </div>
-
-        <div id='product-component-1599980669200'></div>
+        <div id='collection-component-1600700499147'></div>
         <script type="text/javascript">
             /*<![CDATA[*/
             (function () {
@@ -51,13 +50,13 @@
                 }
                 function ShopifyBuyInit() {
                     var client = ShopifyBuy.buildClient({
-                        domain: 'sample-story998.myshopify.com',
-                        storefrontAccessToken: 'dd36b2775a841a239c3621447cbd89a4',
+                        domain: 'lovely-larae-boutique.myshopify.com',
+                        storefrontAccessToken: '1355923812171092a356fd2da3c2a121',
                     });
                     ShopifyBuy.UI.onReady(client).then(function (ui) {
-                        ui.createComponent('product', {
-                            id: '5637073502361',
-                            node: document.getElementById('product-component-1599980669200'),
+                        ui.createComponent('collection', {
+                            id: '219986034845',
+                            node: document.getElementById('collection-component-1600700499147'),
                             moneyFormat: '%24%7B%7Bamount%7D%7D',
                             options: {
                                 "product": {
@@ -66,7 +65,29 @@
                                             "@media (min-width: 601px)": {
                                                 "max-width": "calc(25% - 20px)",
                                                 "margin-left": "20px",
-                                                "margin-bottom": "50px"
+                                                "margin-bottom": "50px",
+                                                "width": "calc(25% - 20px)"
+                                            },
+                                            "img": {
+                                                "height": "calc(100% - 15px)",
+                                                "position": "absolute",
+                                                "left": "0",
+                                                "right": "0",
+                                                "top": "0"
+                                            },
+                                            "imgWrapper": {
+                                                "padding-top": "calc(75% + 15px)",
+                                                "position": "relative",
+                                                "height": "0"
+                                            }
+                                        },
+                                        "button": {
+                                            ":hover": {
+                                                "background-color": "#9568c6"
+                                            },
+                                            "background-color": "#a573dc",
+                                            ":focus": {
+                                                "background-color": "#9568c6"
                                             }
                                         }
                                     },
@@ -97,6 +118,15 @@
                                                 "margin-left": "0px",
                                                 "margin-bottom": "0px"
                                             }
+                                        },
+                                        "button": {
+                                            ":hover": {
+                                                "background-color": "#9568c6"
+                                            },
+                                            "background-color": "#a573dc",
+                                            ":focus": {
+                                                "background-color": "#9568c6"
+                                            }
                                         }
                                     },
                                     "text": {
@@ -104,9 +134,33 @@
                                     }
                                 },
                                 "cart": {
+                                    "styles": {
+                                        "button": {
+                                            ":hover": {
+                                                "background-color": "#9568c6"
+                                            },
+                                            "background-color": "#a573dc",
+                                            ":focus": {
+                                                "background-color": "#9568c6"
+                                            }
+                                        }
+                                    },
                                     "text": {
                                         "total": "Subtotal",
                                         "button": "Checkout"
+                                    }
+                                },
+                                "toggle": {
+                                    "styles": {
+                                        "toggle": {
+                                            "background-color": "#a573dc",
+                                            ":hover": {
+                                                "background-color": "#9568c6"
+                                            },
+                                            ":focus": {
+                                                "background-color": "#9568c6"
+                                            }
+                                        }
                                     }
                                 }
                             },
@@ -116,10 +170,11 @@
             })();
         /*]]>*/
         </script>
-    </div>
-    <div>
-        {{>footer}}
-    </div>
+
+
+        <div>
+            {{>footer}}
+        </div>
 
 </body>
 
