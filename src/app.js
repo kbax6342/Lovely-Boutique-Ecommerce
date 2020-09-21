@@ -31,20 +31,20 @@ app.use(bodyParser.urlencoded({
 
 app.get('', (req, res) => {
     res.render('index', {
-        title: 'Lovely Larea Boutique'
+        title: 'Lovely Larae Boutique'
     })
 })
 
 app.get('/shop', (req, res) => {
     res.render('shop', {
-        title: 'Lovely Larea Boutique'
+        title: 'Lovely Larae Boutique'
     })
 })
 
 app.get('/contact', (req, res) => {
 
     res.render('contact', {
-        title: 'Lovely Larea Boutique'
+        title: 'Lovely Larae Boutique'
     })
 })
 
@@ -93,7 +93,7 @@ app.post('/send', (req, res) => {
 
     res.render('contact', {
         msg: 'Email Sent!',
-        title: 'Lovely Larea Boutique'
+        title: 'Lovely Larae Boutique'
     })
 
 })
